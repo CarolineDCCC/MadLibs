@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+    <link rel="stylesheet" href="madlibs.css">
+        
+    </head>
+<body>
+<div id="wrapper">
+<header id="img-header">
+    <img class="img-fluid" src="MadLibsHeader.jpg" 
+    alt="Banner of an unofficial Mad Libs game.">
+</header>
+
+<main>
+<h1>Madlibs</h1>
+
+<p>Please enter the following information:</p>
+
+<input type="text" id="pluralNoun" placeholder="a plural noun" required><br>
+<input type="text" id="noun1" placeholder="a noun" required><br>
+<input type="text" id="noun2" placeholder="another noun" required><br>
+<input type="text" id="song" placeholder="song" required><br>
+<input type="text" id="verb" placeholder="verb" required><br>
+<br>
+
+<button id="submit" type="button" onClick="createMessage()">Submit</button>
+
+<div id="output-container" style="display: none;">
+    <div id="output-box">
+        <p>Learning to drive is a tricky process.</p>
+        <ol>
+            <li>Keep two <span id="word1">Pickles</span>
+                on the steering wheel at all times.
+            </li>
+
+            <li>Step on the <span id="word2">Dog</span>
+                to speed up and the <span id="word3">Cat</span>
+                to slow down.
+            </li>
+
+            <li><span id="word4">song.</span> song.
+            </li>
+
+            <li>Honk when you see <span id="word5"></span>
+                on a street sign.
+            </li>
+        </ol>
+
+    </div>
+    <br>
+    <button id="goAgain" type="button" onClick="startOver()">Go Again!</button>
+</div>
+
+
+</main>
+</div>
+<script src="madlibs.js"></script>
+</body>
+</html> 
+
